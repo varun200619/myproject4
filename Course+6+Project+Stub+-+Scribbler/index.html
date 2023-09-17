@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> scriBBler home page</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+    
+   
+</head>
+
+<body >
+    <img src="./images/background.jpg">
+
+        <div class="header">
+            <div class="logo">scriBBler</div>
+            <div class="sub-logo">Explore, Imagine, Create </div>
+            <buttom class="signin" onclick="signinmodal()">sign in</buttom>
+            <buttom class="signup"  onclick="signupmodal()" >sign up</buttom>
+        </div>
+        <div class="overlay1"></div>
+
+        <div class="container">
+            
+            <div class="signup-form">
+               <div> 
+                <span class="form-header">Get Started</span> 
+                <span  class="close1" onclick="closesignupmodal()">&times;</span>
+            </div>
+            <hr></hr>
+            
+                <form action="" class="form1">
+                    <div>
+                        <label for="">Name</label>
+                        <input placeholder="Enter your name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="">Username</label>
+                        <input placeholder="Enter your username"  type="text" required>
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input placeholder="Enter your password"  type="password" required>
+                    </div>   
+                    <div>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input placeholder="re-enter your password"  type="password" required>
+                    </div>
+                     <button class="signup-sub">Sign Up</button>
+
+                </form>
+               
+            
+            </div>
+            <div class="signin-form">
+                <div>
+                <span class="header1">Welcome Back!</span>
+                <sapn class="close2" onclick="closesigninmodal()">&times;</sapn>
+                </div>
+                <hr></hr>
+                <form action="" id="Signin-form">
+                    <div>
+                        <label for="Username">Username</label>
+                        <input placeholder="Enter your username"  type="text" required>
+                       
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input placeholder="Enter your password"  type="password" required>
+                      
+                    </div>
+                    <button class="signin-sub">Sign In</button>
+                    
+                </form>
+                <div class="extra">
+                <span >Not a member?</span>
+                <span class="anotherpage" onclick="switch1()" >Sign Up</span>
+                 </div>
+            </div>
+
+
+            <div class="createpostspage">
+                <form class="cform">
+                   <div class="cfhead">
+                        <span class="pen">Pen Your Post</span> 
+                    
+                         <span class="cfclose" onclick="closecreate()">&times;</span>
+                        </div>
+                        <hr></hr>
+                    
+                    <div class="Title">
+                        <label for="">Title</label>
+                        <textarea placeholder="Enter title of your post"  required></textarea>
+                       
+                    </div>
+                       
+                    
+                    <div class="content">
+                        <label for="">Content</label>
+                        <textarea placeholder="Enter the contents of your post"  required></textarea> 
+                     </div> 
+
+                     <div class="create">
+                        <button class="pcreate" >create</button>
+                     </div>
+
+
+                </form>
+                
+            </div>
+
+            <div class="post">
+                <button class="allposts" onclick="all_post()">All Posts</button>
+                <button class="createposts" onclick="opencreatepage()">Create Post</button>
+            
+            </div>
+         
+        </div>
+           
+        
+</body>
+
+
+</html>
